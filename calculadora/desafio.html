@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Workshop - Desafio</title>
+    <link rel="stylesheet" type="text/css" href="css/desafio.css" />
+  </head>
+  <body>
+    <nav class="barra-navegacao">
+      <img
+        class="barra-navegacao__logotipo"
+        src="img/logotipo-reprograma.png"
+      />
+    </nav>
+    <main class="conteudo-principal">
+      <section class="secao secao-hora">
+        <article class="secao__conteudo">
+          <div class="secao__formulario">
+            <fieldset>
+              <legend>Quanto você cobra por hora?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="valor-hora">Valor por Hora</label>
+                <input id="valor-hora" type="number" value="0" />
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Quantas horas o projeto vai demandar?</legend>
+              <div class="secao__formulario__grupo">
+                <label for="horas-projeto">Horas do Projeto</label>
+                <input id="horas-projeto" type="number" value="0" />
+              </div>
+            </fieldset>
+            <a href="index.html">Voltar</a>
+            <button onclick="calcular(document.getElementById('valor-hora'), document.getElementById('horas-projeto'))">Calcular</button>
+          </div>
+        </article>
+        <footer class="secao__rodape">
+          <h3 class="secao__rodape__valor">
+            <span id="resposta">R$ 0,00</span><small>/Valor Total</small>
+          </h3>
+          <p class="secao__rodape__legenda">Seu valor para o projeto</p>
+        </footer>
+      </section>
+
+    </main>
+    <footer class="rodape">Feito com muito ♥</footer>
+
+
+    <script type="text/javascript" src="js/desafio.js"></script>
+  </body>
+</html>
